@@ -1,4 +1,5 @@
 <!-- Print Fibonacci series up to n. -->
+ <!-- using function in php -->
  <?php
 
      function fibonacci($n)
