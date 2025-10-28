@@ -5,11 +5,15 @@
      // object which
      class sumOfDigits
      {
+         // property
          public $n;
+
+         //  constructor method to set value of property.
          public function __construct($n)
          {
              $this->n = $n;
          }
+         //  class method to calculate sum of digits.
          public function sumDigit()
          {
              $num = $this->n;
@@ -23,6 +27,7 @@
          }
      }
 
+     //  main code
      //  Taking input in $n.
      $n      = trim(fgets(STDIN));
      $sumObj = new sumOfDigits($n);
