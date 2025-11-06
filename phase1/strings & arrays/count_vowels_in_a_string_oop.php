@@ -5,12 +5,16 @@
     class countVowelsInString
     {
 
+        // class property
         public $str;
+
+        // class constructor
         public function __construct($str)
         {
             $this->str = $str;
         }
 
+        // class function
         public function countVowels()
         {
             $count  = 0;
@@ -30,6 +34,7 @@
     // $str = trim($str);
     $str = strtolower($str);
 
+    // i have just created object of class variable.
     $countObj   = new countVowelsInString($str);
     $finalCount = $countObj->countVowels();
 echo "Total Count is: $finalCount\n";
