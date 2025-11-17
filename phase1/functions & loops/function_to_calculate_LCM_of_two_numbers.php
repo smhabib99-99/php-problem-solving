@@ -1,16 +1,15 @@
-<!--  24. Function to calculate GCD of two numbers. -->
+<!--  25. Function to calculate LCM of two numbers. -->
 
 <?php
 
     $a = fgets(STDIN);
     $b = fgets(STDIN);
+
     $a = (int) trim($a);
     $b = (int) trim($b);
 
-    function findGCD($a, $b)
+    function calculateGCD($a, $b)
     {
-
-        // in anyway ami variable a ke boro korte chassi.
         if ($a < $b) {
             $temp = $a;
             $a    = $b;
@@ -20,17 +19,22 @@
         $temp_a = 0;
         while ($b != 0) {
             $temp_b = $a % $b;
-            // 0 er ager value ta rakhlam $temp_a te.
             $temp_a = $b;
             $b      = $temp_b;
             $a      = $temp_a;
-
         }
 
         return $temp_a;
     }
 
-    $gcd = findGCD($a, $b);
-    echo "GCD of $a and $b is $gcd\n";
+    function calculateLCM($a, $b)
+    {
+        $gcd = calculateGCD($a, $b);
+        $lcm = ($a * $b) / $gcd;
+        return $lcm;
+    }
+
+    $result = calculateLCM($a, $b);
+    echo "LCM of $a and $b is $result\n";
 
 ?>
