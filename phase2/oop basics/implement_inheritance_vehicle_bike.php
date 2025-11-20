@@ -61,6 +61,16 @@
          public function __construct($brand, $model, $year, $type)
          {
              parent::__construct($brand, $model, $year); // er karone vehicle class er private property access kora jasse. ta nahole vehicle class er private property access kora jaito na.
+             /**
+              * ✔ parent::__construct()
+              * Used to call parent class constructor so we don’t repeat the same code.
+
+              * ✔ Child class can:
+              * Use parent methods
+              * Extend parent functionality
+              * Add new own methods
+              *
+              */
              $this->type = $type;
          }
 
