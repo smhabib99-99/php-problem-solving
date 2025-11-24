@@ -1,6 +1,7 @@
 <!--  36. Implement static properties and methods. -->
   <!-- Class name ar function name jodi Same name hoi tahole seta to Constructor hoye jai. -->
    <!-- Object er khetre this use kora hoi, ar static method er khetre self use kora hoi php te. -->
+    <!-- Jokhon Object create kora hobe tokhon ====={$this->operator}==== use kora hoi. Ar jokhon Static method use kora hoi tokhon ===={self::operator}==== use kora hoi -->
   <?php
 
       class Counter
